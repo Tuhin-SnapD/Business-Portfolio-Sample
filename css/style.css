@@ -1,231 +1,508 @@
-*{
-    margin:0;
-    padding:0;
+/* 1. Hero Section */
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo{
-    width:15%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
 }
 
-.logo img{
-    width: 40%;
-    border: 3px solid red;
-    border-radius: 50px;
-
+.firstSection {
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    cursor: pointer;
+.box-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  gap: 2rem;
 }
 
-.nav-list{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.firstHalf {
+  flex: 1 1 500px;
 }
 
-.nav-list li{
-    list-style: none ;
-    padding: 28px 30px;
-
+.secondHalf img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.nav-list li a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-.nav-list li a:hover{
-    text-decoration: none;
-    color: red;
-}
-.rightNav{
-    width: 50%;
-    text-align: right;
-    padding: 20px;
-    margin: auto;
+.text-big {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e88e5;
 }
 
-#search{
-    padding: 5px;
-    font-size: 17px;
-    border: 2px solid white;
-    border-radius: 9px;
+.text-small {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
 }
 
-.background{
-    background:rgba(0, 0, 0, 0.26) url("../img/bg.jpg");
-    background-size: cover;
-    background-blend-mode: darken;
-}
-.firstSection{
-    height: 100vh;
-
-}
-.box-main{
-    display: flex;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    
-    height: 100%;
+.buttons .btn {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.firstHalf{
-    width: 40%;
-    margin-left: 150px;
-    display: flex;
+/* 2. Section Shared */
+section {
+  padding: 4rem 2rem;
+}
+
+.sectionTag {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0d47a1;
+}
+
+.sectionSubTag {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* 3. Content Sections (About, Save Time, Success, Why) */
+.secRight, .secLeft, .secRight1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.secRight .paras, .secRight1 .paras {
+  order: 1;
+  flex: 1 1 55%;
+}
+.secRight .thumbnail, .secRight1 .thumbnail {
+  order: 2;
+  flex: 1 1 40%;
+}
+
+.secLeft .paras {
+  order: 2;
+  flex: 1 1 55%;
+}
+.secLeft .thumbnail {
+  order: 1;
+  flex: 1 1 40%;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Services Section (Already partly provided) */
+.services {
+  background-color: #f0f8ff;
+  padding: 4rem 2rem;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-6px);
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+/* 5. Contact Section */
+.contact {
+  background-color: #e3f2fd;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0d47a1;
+}
+
+.form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btndark {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btndark:hover {
+  background-color: #1565c0;
+}
+
+/* 6. Footer */
+footer {
+  padding: 1.5rem;
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+}
+
+/* 7. Responsive Tweaks */
+@media (max-width: 768px) {
+  .box-main,
+  .secRight,
+  .secLeft,
+  .secRight1 {
     flex-direction: column;
-    justify-content: center;
-    
-}
-
-.secondHalf{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 50px;
-    
-}
-
-
-.secondHalf img{
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-.text-big{
-    font-size: 32px;
-}
-
-.text-small{
-    font-size: 15px;
-    color: dark gray;
-}
-
-.btn{
-    padding: 5px 30px;
-    margin:6px 0;
-    border: 3px solid white;
-    border-radius: 8px;
-    font-size: 12px;
-    background: none;
-    color: white;
-    cursor: pointer;
-}
-
-
-.bg{
-    background:rgba(0,0,0,0) url('../img/bg2.jpg');
-    background-size: unset;
-}
-.paras{
-    padding: 50px 40px;
-}
-
-.sectionTag{
-    padding: 20px 0px;
-}
-.secRight{
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:auto;
-    max-width: 90%;
-}
-
-.secLeft{
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:auto;
-    max-width: 90%;
-    flex-direction: row-reverse;
-}
-
-.secRight1{
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:auto;
-    max-width: 90%;
-}
-
-.thumbnail img{
-    
-    border-radius: 20px;
-}
-
-.contact{
-    background-color: rgba(128, 128, 128, 0.315);
-    height: 500px;
-    font-size: 26px;
-    padding-top: 20px;
-}
-
-.text-center{
-    padding: 20px;
     text-align: center;
-    margin:auto;
+  }
+
+  .rightNav {
+    margin-top: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+@media (max-width: 480px) {
+  .text-big {
+    font-size: 2rem;
+  }
 
-.form{
-    max-width: 550px;
-    margin:15px auto;
+  .text-small {
+    font-size: 1rem;
+  }
 
-}
-
-.form-input{
-    margin: 10px 0px;
+  .buttons .btn {
     width: 100%;
-    padding: 3px 3px;
-    font-size:16px;
-    border: 2px solid grey;
-    border-radius: 5px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .service-box {
+    width: 100%;
+    max-width: none;
+  }
 }
 
-.btndark{
-    padding: 3px 30px;
-    margin:8px 0;
-    border: 2px solid grey;
-    border-radius: 8px;
-    font-size: 15px;
-    background: white;
-    color: black;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    float: left;
-   
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0d47a1;
+  color: white;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.text-footer{
-    text-align: center;
-    padding: 10px 0;
-    color:white
+/* Logo */
+.logo img {
+  height: 50px;
+  border-radius: 6px;
 }
 
-@media only screen and (max-width: 1140px){
-    .nav-list{
-        flex-direction: column;
-    }    
-    .navbar{
-        flex-direction: column;
-    }
+/* Nav Links */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #90caf9;
+}
+
+/* Right Side - Search */
+.rightNav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#search {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-sm {
+  padding: 0.45rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-sm:hover {
+  background-color: #42a5f5;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .rightNav {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+
+  #search {
+    width: 70%;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;  /* Reduced height */
+  background-color: #0d47a1;
+  color: white;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo img {
+  height: 40px;  /* Slightly smaller logo */
+  border-radius: 6px;
+}
+.nav-list {
+  gap: 1rem;  /* Less space between links */
+}
+footer {
+  padding: 1rem 1.5rem;  /* Reduced height */
+  background-color: #000;  /* Solid black */
+  color: #ccc;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer p {
+  margin: 0;
+  color: #ccc;
+  letter-spacing: 0.5px;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d47a1;
+  padding: 0.75rem 2rem;
+  color: white;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+  border-radius: 6px;
+}
+
+/* Nav Links */
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #1565c0;
+  color: #e3f2fd;
+}
+
+/* Right Side (Search Bar) */
+.rightNav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#search {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+/* Search Button */
+.btn-sm {
+  padding: 0.45rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-sm:hover {
+  background-color: #42a5f5;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .rightNav {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #search {
+    width: 70%;
+  }
+}
+/* Blue tint overlay effect for all img tags */
+img {
+  filter: brightness(0.9) sepia(1) hue-rotate(180deg) saturate(1.5);
+  transition: filter 0.3s ease;
+}
+
+/* Optional: On hover, reduce tint slightly for interactivity */
+img:hover {
+  filter: brightness(1) sepia(1) hue-rotate(180deg) saturate(1.2);
+}
+.imgFluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Optional: Specific sizing for thumbnails and service icons */
+.thumbnail img,
+.service-icon {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.thumbnail {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.service-box img {
+  border: 2px solid #0d47a1;
+  padding: 4px;
+  border-radius: 8px;
 }
