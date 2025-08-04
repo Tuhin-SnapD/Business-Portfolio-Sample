@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TC-Alliance - Connecting Businesses.</title>
+  <meta name="description" content="TC-Alliance - Connecting Businesses. Digital technology transforming engagement, commerce, and marketing." />
+  <title>TC-Alliance - Connecting Businesses</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- jQuery -->
@@ -16,7 +17,7 @@
 
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
     .btn:hover, .btndark:hover {
       transform: scale(1.05);
@@ -33,163 +34,167 @@
     }
   </style>
 </head>
-<button id="backToTop" style="
-  display:none;
-  position:fixed;
-  bottom:30px;
-  right:30px;
-  padding:10px 15px;
-  background:#0d47a1;
-  color:white;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 999;
-">↑ Top</button>
 
 <body>
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top" style="
+    display:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    padding:12px 16px;
+    background:#0d47a1;
+    color:white;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 999;
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  ">↑</button>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">
-    <img src="img/img.jpg" alt="logo" />
-  </div>
-  <ul class="nav-list">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-  <div class="rightNav">
-    <input type="text" name="search" id="search" placeholder="Search..." />
-    <button class="btn btn-sm">Search</button>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="TC-Alliance Logo" />
+    </div>
+    <ul class="nav-list">
+      <li><a href="#home" aria-current="page">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="rightNav">
+      <input type="text" name="search" id="search" placeholder="Search..." aria-label="Search" />
+      <button class="btn btn-sm" type="button">Search</button>
+    </div>
+  </nav>
 
-
-<!-- Hero Section -->
-<section class="background firstSection" id="home">
-  <div class="box-main fade-in">
-    <div class="firstHalf">
-      <p class="text-big animate__animated animate__fadeInLeft">The Future of Business Connectivity is Here</p>
-      <p class="text-small">COVID-19 is accelerating the rise of the digital economy. We at TC-Alliance help you connect with preferred businesses to expand and grow your digital network. Digital technology is transforming engagement, commerce, marketing, and more.</p>
-      <div class="buttons">
-        <button class="btn">Subscribe</button>
-        <button class="btn">Watch Demo</button>
+  <!-- Hero Section -->
+  <section class="background firstSection" id="home">
+    <div class="box-main fade-in">
+      <div class="firstHalf">
+        <h1 class="text-big animate__animated animate__fadeInLeft">The Future of Business Connectivity is Here</h1>
+        <p class="text-small">COVID-19 is accelerating the rise of the digital economy. We at TC-Alliance help you connect with preferred businesses to expand and grow your digital network. Digital technology is transforming engagement, commerce, marketing, and more.</p>
+        <div class="buttons">
+          <button class="btn" type="button">Subscribe</button>
+          <button class="btn btn-secondary" type="button">Watch Demo</button>
+        </div>
+      </div>
+      <div class="secondHalf animate__animated animate__fadeInRight">
+        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=center" alt="Business connectivity illustration" />
       </div>
     </div>
-    <div class="secondHalf animate__animated animate__fadeInRight">
-      <img src="img/img2.png" alt="tc" />
-    </div>
-  </div>
-</section>
-
-<hr>
-
-<!-- Content Sections -->
-<section class="bg">
-
-  <!-- About Section -->
-  <section class="secRight fade-in" id="about">
-    <div class="paras">
-      <p class="sectionTag text-big">The End of Hassle to Find Your Perfect Business</p>
-      <p class="sectionSubTag text-small">The TC-Alliance Business Connector lets you integrate processes using open tech, allowing real-time and async communication.</p>
-    </div>
-    <div class="thumbnail">
-      <img src="./img/img1.jpg" width="250" height="250" alt="img" class="imgFluid" />
-    </div>
   </section>
 
   <hr>
 
-  <!-- Save Time Section -->
-  <section class="secLeft fade-in">
-    <div class="paras">
-      <p class="sectionTag text-big">Save Time, Save Money</p>
-      <p class="sectionSubTag text-small">TC-Alliance helps you make the most of your time by streamlining business connections and processes effectively and efficiently.</p>
-    </div>
-    <div class="thumbnail">
-      <img src="./img/img2.jpg" width="250" height="250" alt="img" class="imgFluid" />
-    </div>
-  </section>
+  <!-- Content Sections -->
+  <main class="bg">
+    <!-- About Section -->
+    <section class="secRight fade-in" id="about">
+      <div class="paras">
+        <h2 class="sectionTag text-big">The End of Hassle to Find Your Perfect Business</h2>
+        <p class="sectionSubTag text-small">The TC-Alliance Business Connector lets you integrate processes using open tech, allowing real-time and async communication.</p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center" width="250" height="250" alt="Business integration illustration" class="imgFluid" />
+      </div>
+    </section>
 
-  <hr>
+    <hr>
 
-  <!-- Success Section -->
-  <section class="secRight1 fade-in">
-    <div class="paras">
-      <p class="sectionTag text-big">Success is 1% Inspiration, 99% Work</p>
-      <p class="sectionSubTag text-small">With TC-Alliance, stay motivated and organized as you journey toward personal and professional success.</p>
-    </div>
-    <div class="thumbnail">
-      <img src="./img/img3.jpg" width="250" height="250" alt="img" class="imgFluid" />
-    </div>
-  </section>
+    <!-- Save Time Section -->
+    <section class="secLeft fade-in">
+      <div class="paras">
+        <h2 class="sectionTag text-big">Save Time, Save Money</h2>
+        <p class="sectionSubTag text-small">TC-Alliance helps you make the most of your time by streamlining business connections and processes effectively and efficiently.</p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center" width="250" height="250" alt="Time management illustration" class="imgFluid" />
+      </div>
+    </section>
 
-  <hr>
+    <hr>
 
-  <!-- ⭐ New Section -->
-  <section class="secLeft fade-in" id="why">
-    <div class="paras">
-      <p class="sectionTag text-big">Why Choose TC-Alliance?</p>
-      <p class="sectionSubTag text-small">
-        ✔️ Unified platform for digital collaboration <br />
-        ✔️ Trusted by 10,000+ businesses <br />
-        ✔️ AI-assisted matchmaking for partnerships <br />
-        ✔️ Built for growth, ready for scale.
-      </p>
-    </div>
-    <div class="thumbnail">
-      <img src="./img/img2.png" width="250" height="250" alt="img" class="imgFluid" />
-    </div>
-  </section>
+    <!-- Success Section -->
+    <section class="secRight1 fade-in">
+      <div class="paras">
+        <h2 class="sectionTag text-big">Success is 1% Inspiration, 99% Work</h2>
+        <p class="sectionSubTag text-small">With TC-Alliance, stay motivated and organized as you journey toward personal and professional success.</p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center" width="250" height="250" alt="Success and achievement illustration" class="imgFluid" />
+      </div>
+    </section>
 
-  <hr>
-<!-- Services Section -->
-<section class="services fade-in" id="services">
-  <h2 class="text-center sectionTag">Our Services</h2>
-  <div class="services-container">
-    <div class="service-box">
-      <img src="./img/img1.jpg" alt="Networking" class="service-icon" />
-      <h3>Business Networking</h3>
-      <p>Connect with potential partners, clients, and service providers across industries with our intelligent matchmaking system.</p>
-    </div>
-    <div class="service-box">
-      <img src="./img/img2.jpg" alt="Integration" class="service-icon" />
-      <h3>System Integration</h3>
-      <p>Seamlessly connect your digital tools, ERP systems, and workflows using our secure integration pipelines.</p>
-    </div>
-    <div class="service-box">
-      <img src="./img/img3.jpg" alt="Insights" class="service-icon" />
-      <h3>Analytics & Insights</h3>
-      <p>Leverage real-time dashboards and AI-powered reports to make smarter business decisions, faster.</p>
-    </div>
-  </div>
-</section>
+    <hr>
 
-  <!-- Contact -->
-  <section class="contact fade-in" id="contact">
-    <h2 class="text-center">Contact Us</h2>
-    <div class="form">
-      <input class="form-input" type="text" id="name" placeholder="Enter your Name" />
-      <input class="form-input" type="text" id="phone" placeholder="Enter your Contact no." />
-      <input class="form-input" type="email" id="email" placeholder="Enter your Email" />
-      <textarea class="form-input" id="text" cols="30" rows="8" placeholder="Elaborate your Concern"></textarea>
-      <button class="btndark" onclick="submitForm()">Submit</button>
-      <button class="btndark" onclick="resetForm()">Reset</button>
-    </div>
-  </section>
+    <!-- Why Choose Section -->
+    <section class="secLeft fade-in" id="why">
+      <div class="paras">
+        <h2 class="sectionTag text-big">Why Choose TC-Alliance?</h2>
+        <p class="sectionSubTag text-small">
+          ✔️ Unified platform for digital collaboration <br />
+          ✔️ Trusted by 10,000+ businesses <br />
+          ✔️ AI-assisted matchmaking for partnerships <br />
+          ✔️ Built for growth, ready for scale.
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop&crop=center" width="250" height="250" alt="Platform features illustration" class="imgFluid" />
+      </div>
+    </section>
 
-</section>
+    <hr>
 
-<!-- Footer -->
-<footer class="background">
-  <p class="text-footer">Copyright &copy; 2030 - TC-Alliances. All Rights Reserved.</p>
-</footer>
+    <!-- Services Section -->
+    <section class="services fade-in" id="services">
+      <h2 class="text-center sectionTag">Our Services</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=200&h=200&fit=crop&crop=center" alt="Business Networking" class="service-icon" />
+          <h3>Business Networking</h3>
+          <p>Connect with potential partners, clients, and service providers across industries with our intelligent matchmaking system.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=200&fit=crop&crop=center" alt="System Integration" class="service-icon" />
+          <h3>System Integration</h3>
+          <p>Seamlessly connect your digital tools, ERP systems, and workflows using our secure integration pipelines.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&crop=center" alt="Analytics & Insights" class="service-icon" />
+          <h3>Analytics & Insights</h3>
+          <p>Leverage real-time dashboards and AI-powered reports to make smarter business decisions, faster.</p>
+        </div>
+      </div>
+    </section>
 
-<!-- Custom Script -->
-<script src="js/script.js"></script>
+    <!-- Contact -->
+    <section class="contact fade-in" id="contact">
+      <h2 class="text-center">Contact Us</h2>
+      <form class="form" onsubmit="submitForm(event)">
+        <input class="form-input" type="text" id="name" name="name" placeholder="Enter your Name" required />
+        <input class="form-input" type="tel" id="phone" name="phone" placeholder="Enter your Contact no." />
+        <input class="form-input" type="email" id="email" name="email" placeholder="Enter your Email" required />
+        <textarea class="form-input" id="text" name="message" cols="30" rows="8" placeholder="Elaborate your Concern" required></textarea>
+        <div class="form-buttons">
+          <button class="btndark" type="submit">Submit</button>
+          <button class="btndark btn-secondary" type="button" onclick="resetForm()">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer class="background">
+    <p class="text-footer">Copyright &copy; 2030 - TC-Alliances. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
 </body>
 </html>
